@@ -1,13 +1,16 @@
 import { createBrowserRouter, Navigate } from "react-router";
 import { AuthLayout } from "../components/layouts/AuthLayout";
-import { DashboardLayout } from "../components/layouts/DashboardLayout";
+// import { DashboardLayout } from "../components/layouts/DashboardLayout";
 import { LoginPage } from "../pages/authPages/LoginPage";
 import { RegisterPage } from "../pages/authPages/RegisterPage";
 import { ForgotPasswordPage } from "../pages/authPages/ForgotPasswordPage";
 import { HomePage } from "../pages/dashboardPages/HomePage";
-import { InvestmentsPage } from "../pages/dashboardPages/InvestmentsPage";
-import { CardsPage } from "../pages/dashboardPages/CardsPage";
+// import { InvestmentsPage } from "../pages/dashboardPages/InvestmentsPage";
+// import { CardsPage } from "../pages/dashboardPages/CardsPage";
 import { ProfilePage } from "../pages/dashboardPages/ProfilePage";
+import Invest from "../components/Invest";
+import Cards from "../components/Cards";
+import DashboardCard from "../components/DashboardCard";
 
 // Simulação de autenticação (em produção, isso viria de um contexto ou estado global)
 const isAuthenticated = () => {
@@ -39,7 +42,7 @@ export const router = createBrowserRouter([
     },
     {
         path: "/dashboard",
-        element: <DashboardLayout />,
+        element: <DashboardCard />,
         children: [
             {
                 index: true,
@@ -47,11 +50,11 @@ export const router = createBrowserRouter([
             },
             {
                 path: "investimentos",
-                element: <InvestmentsPage />,
+                element: <Invest />,
             },
             {
                 path: "cartoes",
-                element: <CardsPage />,
+                element: <Cards />,
             },
             {
                 path: "perfil",

@@ -7,12 +7,12 @@ export default function Footer() {
     <footer className="fixed bottom-0 left-0 w-full bg-gray-50 border-t shadow-md">
       <div className="relative flex justify-around items-center py-3">
 
-        <div className="flex flex-col items-center text-indigo-600">
+        <Link to="/dashboard" className="flex flex-col items-center text-indigo-600">
           <Home size={22} />
           <span className="text-xs mt-1">Início</span>
-        </div>
+        </Link>
 
-        <Link to="/invest" className="flex flex-col items-center text-gray-500">
+        <Link to="/dashboard/investimentos" className="flex flex-col items-center text-gray-500">
           <TrendingUp size={22} />
           <span className="text-xs mt-1">Investir</span>
         </Link>
@@ -23,15 +23,15 @@ export default function Footer() {
           </button>
         </div>
 
-        <Link to="/cards" className="flex flex-col items-center text-gray-500">
+        <Link to="/dashboard/cartoes" className="flex flex-col items-center text-gray-500">
           <CreditCard size={22} />
           <span className="text-xs mt-1">Cartões</span>
         </Link>
 
-        <div className="flex flex-col items-center text-gray-500">
+        <Link to="/dashboard/perfil" className="flex flex-col items-center text-gray-500">
           <User size={22} />
           <span className="text-xs mt-1">Perfil</span>
-        </div>
+        </Link>
 
       </div>
     </footer>
