@@ -10,13 +10,23 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
+=======
+    "@tailwindcss/vite": "^4.2.1",
+    "autoprefixer": "^10.4.27",
+>>>>>>> 36580c7b5045a24cd963c3fea35a7f61069d6dbc
     "axios": "^1.13.6",
     "lucide-react": "^0.577.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.13.1",
+<<<<<<< HEAD
     "recharts": "^3.8.0",
     "tailwindcss": "^4.2.2"
+=======
+    "recharts": "^3.8.0"
+    "tailwindcss": "^4.2.1"
+>>>>>>> 36580c7b5045a24cd963c3fea35a7f61069d6dbc
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
